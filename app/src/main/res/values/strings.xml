@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="phone_number">TextView 02-1234-1234</string>
+</resources>
