@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -24,6 +26,7 @@
         android:backgroundTint="#FF0000"
         android:hint="type here"
         android:textColor="#FF0000" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -32,4 +35,69 @@
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:text="button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/darker_gray"
+        android:scaleType="matrix"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="clickImageButton"
+        android:src="@mipmap/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:checked="true"
+        android:clickable="true" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Off"
+        android:textOn="On" />
+
+    <Switch
+        android:id="@+id/mySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:switchPadding="10dp"
+        android:text="Switch"
+        android:thumbTint="#0000FF"
+        android:trackTint="#FF0000" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="RadioButton"
+        android:buttonTint="@color/colorPrimary"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="#FF0000"
+        android:progressBackgroundTint="#0000FF" />
+
+
+
 </LinearLayout>
